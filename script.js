@@ -1,9 +1,9 @@
 function generatePassword() {
     const length = document.getElementById('jalength').value;
-    const includeUppercase = document.getElementById('jaincludeUppercase').checked;
-    const includeLowercase = document.getElementById('jaincludeLowercase').checked;
-    const includeNumbers = document.getElementById('jaincludeNumbers').checked;
-    const includeSymbols = document.getElementById('jaincludeSymbols').checked;
+    const includeUppercase = document.getElementById('includeUppercase').checked;
+    const includeLowercase = document.getElementById('includeLowercase').checked;
+    const includeNumbers = document.getElementById('includeNumbers').checked;
+    const includeSymbols = document.getElementById('includeSymbols').checked;
 
     const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
