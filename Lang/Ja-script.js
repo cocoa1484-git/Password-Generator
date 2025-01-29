@@ -30,5 +30,7 @@ function copyToClipboard() {
     passwordField.select();
     passwordField.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(passwordField.value);
-    alert('%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%82%92%E3%82%B3%E3%83%94%E3%83%BC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%E3%80%82: ' + passwordField.value);
+const result3 = decodeURI("%E3%83%91%E3%82%B9%E3%83%AF%E3%83%BC%E3%83%89%E3%82%92%E3%82%B3%E3%83%94%E3%83%BC%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%81");
+console.log(result3);
+    alert('(result3): ' + passwordField.value);
 }
