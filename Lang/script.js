@@ -8,7 +8,7 @@ function generatePassword() {
     const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseLetters = 'abcdefghijklmnopqrstuvwxyz';
     const numbers = '0123456789';
-    const symbols = '!@#$%^&*()_+[]{}|;:,.<>?';
+    const symbols = '!@#$%^&*-_"¥|;:,.<>?';
 
     let characters = '';
     if (includeUppercase) characters += uppercaseLetters;
@@ -30,5 +30,5 @@ function copyToClipboard() {
     passwordField.select();
     passwordField.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(passwordField.value);
-    alert('copy!: ' + passwordField.value);
+    alert('copy!: ');
 }
