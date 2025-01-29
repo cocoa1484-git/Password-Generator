@@ -30,5 +30,5 @@ function copyToClipboard() {
     passwordField.select();
     passwordField.setSelectionRange(0, 99999); // For mobile devices
     navigator.clipboard.writeText(passwordField.value);
-    alert('copy!');
+    alert('clipboard copied');
 }
