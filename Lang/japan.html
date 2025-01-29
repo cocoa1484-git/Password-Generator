@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パスワード作成機</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="password-generator-container">
+        <h1>パスワード作成機</h1>
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" min="4" max="20" value="12">
+
+        <div class="options">
+            <label>
+                <input type="checkbox" id="includeUppercase" checked>
+                大文字を含める
+            </label>
+            <label>
+                <input type="checkbox" id="includeLowercase" checked>
+                小文字を含める
+            </label>
+            <label>
+                <input type="checkbox" id="includeNumbers" checked>
+                数字を含める
+            </label>
+            <label>
+                <input type="checkbox" id="includeSymbols" checked>
+                記号を含める
+            </label>
+        </div>
+
+        <button onclick="generatePassword()">パスワードを作成</button>
+        <div class="result">
+            <input type="text" id="password" readonly>
+            <button onclick="copyToClipboard()">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
